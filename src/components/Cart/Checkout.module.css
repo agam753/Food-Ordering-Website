@@ -1,0 +1,83 @@
+.content {
+  /* border: 2px solid black; */
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr;
+
+  justify-items: center;
+}
+
+.fields {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.fields label {
+  font-size: 1.1rem;
+  padding-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.fields input {
+  width: 95%;
+  height: 2rem;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 1.2rem;
+  padding: 0.6rem;
+}
+
+.actions {
+  /* border: 2px solid black; */
+  text-align: right;
+  padding: 1rem 1.4rem;
+  padding-bottom: 0;
+}
+
+.actions button {
+  font: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+  background: linear-gradient(-50deg, #82cd47, #54b435);
+  border: 1px solid #54b435;
+  color: white;
+  padding: 0.4rem 1.2rem;
+  border-radius: 25px;
+  margin-left: 1rem;
+}
+
+.actions button:active,
+.actions button:hover {
+  background: linear-gradient(50deg, #82cd47, #54b435);
+  border-color: #82cd47;
+  color: white;
+}
+
+.actions .cancel {
+  border-color: salmon;
+  background: transparent;
+  color: salmon;
+}
+
+.actions .cancel:hover,
+.actions .cancel:active {
+  background: salmon;
+  color: white;
+  border: none;
+}
+
+.invalid label {
+  color: red;
+}
+
+.invalid input {
+  border: 1px solid salmon;
+  background: rgba(241, 184, 178, 0.509);
+}
+
+.actions button:disabled {
+  background: #ccc;
+  border-color: #ccc;
+  color: #3f3f3f;
+  cursor: not-allowed;
+}
